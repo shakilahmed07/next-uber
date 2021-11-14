@@ -9,7 +9,7 @@ import UberSchedule from "../../public/uberschedule.png";
 
 const Header = () => {
   return (
-    <div className="flex-1 px-2">
+    <div className="flex-1 px-2 md:px-8">
       {/* uber */}
       <div className="flex justify-between">
         <Image src={logo} width={80} height={80} />

@@ -1,10 +1,14 @@
 import Link from "next/link";
+import React, { useState } from "react";
 import { ArrowLeftIcon } from "@heroicons/react/solid";
 import { StarIcon } from "@heroicons/react/solid";
 
 const Search = () => {
+  const [pickup, setPickup] = useState("");
+  const [dropOff, setDropOff] = useState("");
+
   return (
-    <div className="h-screen bg-gray-200">
+    <div className="h-screen bg-gray-200 md:px-40 md:py-10">
       {/* Back Button */}
       <div className="px-4 py-3 bg-white">
         <Link href="/">
@@ -18,11 +22,15 @@ const Search = () => {
           className="input-location"
           type="text"
           placeholder="Enter Pickup Location"
+          value={pickup}
+          onChange={(e) => setPickup(e.target.value)}
         />
         <input
           className="my-2 input-location"
           type="text"
           placeholder="Where to?"
+          value={dropOff}
+          onChange={(e) => setDropOff(e.target.value)}
         />
       </div>
 
@@ -36,10 +44,20 @@ const Search = () => {
       </div>
 
       {/* confirm Button */}
-      <div className="px-2">
-        <button className="bg-gray-900 text-white p-2 w-full">
-          Confirm Locations
-        </button>
+      <div className="px-2 md:px-0">
+        <Link
+          href={{
+            pathname: "/confirm",
+            query: {
+              pickup: pickup,
+              dropOff: dropOff,
+            },
+          }}
+        >
+          <button className="bg-gray-900 text-white p-2 w-full">
+            Confirm Locations
+          </button>
+        </Link>
       </div>
     </div>
   );
