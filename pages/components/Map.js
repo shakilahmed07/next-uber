@@ -3,13 +3,13 @@ import { useEffect } from "react";
 import mapboxgl from "!mapbox-gl";
 
 mapboxgl.accessToken =
-  "your token";
+  "pk.eyJ1IjoidGFudmlyc2hha2lsIiwiYSI6ImNrczQ2Z2oxeDAwZHMycHBrdW01dm1janYifQ.kZ5H7GOkYq4Ss4ylo5Gh_w";
 
 const Map = ({ pickupCoordinates, dropOffCoordinates }) => {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: "map",
-      style: "mapbox://styles/yourstyle",
+      style: "mapbox://styles/tanvirshakil/ckvs94n1n0tmc14t7s1zers9c",
       center: [-74.5, 40], // starting position [lng, lat]
       zoom: 3, // starting zoom
     });

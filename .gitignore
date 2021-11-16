@@ -14,8 +14,6 @@
 
 # production
 /build
-Map.js
-firebase.js
 
 # misc
 .DS_Store
