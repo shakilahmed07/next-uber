@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import carList from "./data/carList";
+import carList from "../components/data/carList";
 
 const RideSelector = ({ pickupCoordinates, dropOffCoordinates }) => {
   const [rideDuration, setRideDuration] = useState(0);

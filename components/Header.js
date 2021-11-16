@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/Uber-Logo.wine.svg";
-import user from "../../public/user.jpg";
-import UberX from "../../public/UberX.png";
-import UberBike from "../../public/bike.png";
-import UberSchedule from "../../public/uberschedule.png";
+import logo from "../public/Uber-Logo.wine.svg";
+import UberX from "../public/UberX.png";
+import UberBike from "../public/bike.png";
+import UberSchedule from "../public/uberschedule.png";
 import { useRouter } from "next/router";
 import { onAuthStateChanged, signOut } from "@firebase/auth";
-import { auth } from "../../firebase";
+import { auth } from "../firebase";
 
 const Header = () => {
   const [user, setUser] = useState(null);

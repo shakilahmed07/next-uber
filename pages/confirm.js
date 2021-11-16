@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import Map from "./components/Map";
-import RideSelector from "./components/RideSelector";
+import Map from "../components/Map";
+import RideSelector from "../components/RideSelector";
 import { ArrowLeftIcon } from "@heroicons/react/solid";
 import Link from "next/link";
 
