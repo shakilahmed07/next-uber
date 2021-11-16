@@ -8,12 +8,12 @@ Live site : [vercel-live](https://next-uber.vercel.app/) with Next.js React.js, 
 
 Preview the example live on [Next-Uber](https://next-uber.vercel.app/):
 
-[![Open in Web or Mobile](https://next-uber.vercel.app/)](https://next-uber.vercel.app/)
+[![Open in Web or Mobile](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://next-uber.vercel.app/)
 
 ## Github Repository
 
 Deploy the example using [Vercel](https://vercel.com/dashboard):
 
-[![Github Repo](https://github.com/tanvir-shakil/next-uber)](https://github.com/tanvir-shakil/next-uber)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
 ## Features
