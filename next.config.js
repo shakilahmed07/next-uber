@@ -1,6 +1,6 @@
 // next.config.js
 module.exports = {
   images: {
-    domains: [""],
+    domains: ["lh3.googleusercontent.com"],
   },
 };
